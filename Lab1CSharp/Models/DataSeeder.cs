@@ -13,10 +13,9 @@ namespace Lab1CSharp.Models
         {
             context.Database.EnsureCreated();
 
-            // Look for any movies.
             if (context.Movies.Any())
             {
-                return;   // DB has been seeded
+                return;
             }
 
             context.Movies.AddRange(
